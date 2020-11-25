@@ -1,6 +1,6 @@
 # Shop
 
-A boilerplate Test Driven Development environment for Rails. Clone the repo down and delete `./.git`. Rename your app in `application.html`. Write some tests.
+A boilerplate Test Driven Development environment for Rails. Clone the repo down and delete `./.git`. Maybe try the [`rename`](https://github.com/morshedalam/rename) gem. Write some tests. Do the things!
 
 ## Installation
 
