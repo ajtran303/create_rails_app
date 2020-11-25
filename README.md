@@ -1,4 +1,4 @@
-# Shop
+# Create Rails App
 
 A boilerplate Test Driven Development environment for Rails. Clone the repo down and delete `./.git`. Maybe try the [`rename`](https://github.com/morshedalam/rename) gem. Write some tests. Do the things!
 
