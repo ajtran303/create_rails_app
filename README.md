@@ -1,6 +1,6 @@
 # Shop
 
-A Rails app built with TDD.
+A boilerplate Test Driven Development environment for Rails. Clone the repo down and delete `./.git`. Rename your app in `application.html`. Write some tests.
 
 ## Installation
 
@@ -13,6 +13,10 @@ Ruby 2.7.2p & Rails 6.0.3.4
 
 ## Configuration details
 
+Created with `rails new shop -T --database=postgresql --skip-spring --skip-turbolinks`
+
+Configured with these gems to get started with testing
+
 - `rspec-rails` - test suite
 - `faker` - dynamic data for testing
 - `factory_bot_rails` - factories for simpler test setup
@@ -21,7 +25,7 @@ Ruby 2.7.2p & Rails 6.0.3.4
 - `simplecov` - track test coverage
 - `pry` - powerful, interactive debugger
 
-## Setup (Notes)
+## Setup (These Steps were done so you don't have to)
 
 1. Add the above gems to a `:development, :test` group in the Gemfile. Get rid of byebug.
 1. Install and set up RSpec from the command line.
@@ -56,3 +60,5 @@ require 'capybara/rspec'
 ```
 
 Examples of how to write tests - [Using Capybara with RSpec](https://github.com/teamcapybara/capybara#using-capybara-with-rspec)
+
+6. Add `models`, `features`, `factories`, and `views` to the `spec` folder.
