@@ -13,13 +13,13 @@ Ruby 2.7.2p & Rails 6.0.3.4
 
 ## Configuration details
 
-`rspec-rails` - test suite
-`faker` - dynamic data for testing
-`factory_bot_rails` - factories for simpler test setup
-`capybara` - tools for feature testing ("drives" the screen)
-`launchy` - has a cool snippet, `save_and_open_page`
-`simplecov` - track test coverage
-`pry` - powerful, interactive debugger
+- `rspec-rails` - test suite
+- `faker` - dynamic data for testing
+- `factory_bot_rails` - factories for simpler test setup
+- `capybara` - tools for feature testing ("drives" the screen)
+- `launchy` - has a cool snippet, `save_and_open_page`
+- `simplecov` - track test coverage
+- `pry` - powerful, interactive debugger
 
 ## Setup (Notes)
 
@@ -49,6 +49,10 @@ end
 
 [FactoryBot documentation](https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md#configure-your-test-suite)
 
-5. Configure Capybara by adding this to `spec_helper.rb` -> `require 'capybara/rspec'`
+5. Configure Capybara by adding this to (the top?) of `spec_helper.rb`
+
+```
+require 'capybara/rspec'
+```
 
 Examples of how to write tests - [Using Capybara with RSpec](https://github.com/teamcapybara/capybara#using-capybara-with-rspec)
