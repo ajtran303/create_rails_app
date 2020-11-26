@@ -39,6 +39,38 @@ If you're using Heroku you can use GitHub as your deployment method and enable a
 
 TODO: add instructions for Heroku CD.
 
+## Testing DSL
+
+This repo is configured with extra helper methods to make writing tests way cooler. Helper methods are described in `spec/support/helpers.rb`. Here's a common pattern for a feature test, using the included DSL:
+
+```ruby
+# spec/features/welcome/index_spec.rb
+
+require 'rails_helper'
+
+feature 'Welcome Page' do
+  background do
+    visit root_path
+  end
+
+  scenario 'has a page header' do
+    within '.page-header' do
+      page_has_text 'Home'
+    end
+  end
+  
+  scenario 'has a nav bar' do
+    home_link = ['Home', href: root_path]
+    articles_link = ['Articles', href: '/articles']
+    links = [home_link, articles_link]
+
+    within '#nav-bar' do
+      page_has_links links
+    end
+  end
+end
+```
+
 ## Setup (These Steps were done so you don't have to)
 
 1. Add the above gems to a `:development, :test` group in the Gemfile. Get rid of byebug.
